@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css" />
+    <!--<title>Typing Text Animation</title>-->
+  </head>
+  <body>
+    <div class="container">
+      <span class="text sec-text"></span>
+    </div>
+    <script>
+      const text = document.querySelector(".sec-text");
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "өглөөний мэнд ";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "сайхан амарсан уу";
+        }, 5000);
+        setTimeout(() => {
+          text.textContent = "зүгээр л ";
+        }, 9900); //1s = 1000 milliseconds
+        setTimeout(() => {
+          text.textContent = "Чи бол гайхалтай ";
+        }, 15000);
+        setTimeout(() => {
+          text.textContent = "ухаалаг";
+        }, 20000);
+        setTimeout(() => {
+          text.textContent = "сайхан сэтгэлтэй";
+        }, 25000);
+        setTimeout(() => {
+          text.textContent = "бас хүчтэй";
+        }, 30000);
+        setTimeout(() => {
+          text.textContent = "бас хүчтэй";
+        }, 35000);
+        setTimeout(() => {
+          text.textContent = "эмэгтэй шүү гэж";
+        }, 35000);
+        setTimeout(() => {
+          text.textContent = "хэлэх гэсэн юм";
+        }, 40000);
+        setTimeout(() => {
+          text.textContent = "i love you 3000";
+        }, 45000);
+      };
+      textLoad();
+      setInterval(textLoad, 50000);
+    </script>
+  </body>
+</html>
